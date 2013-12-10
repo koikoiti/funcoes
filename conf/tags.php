@@ -5,8 +5,8 @@
 	
 	#Definições do Banco de Dados
 	define('DB_Host' , "db4free.net");
-	define('DB_Database' , "colcom");
-	define('DB_User' , "colcom");
+	define('DB_Database' , "funcoes");
+	define('DB_User' , "funcoes");
 	define('DB_Pass' , "s1stem@");
 	
 	#Definições FPDF
