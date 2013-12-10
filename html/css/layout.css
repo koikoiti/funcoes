@@ -1,0 +1,39 @@
+.cont_html{
+	margin-right:10px;
+	margin-bottom:10px;
+	height: 200px;
+	width: 565px;
+	background-color: red;
+	float: left;
+	-webkit-border-radius: 5px;
+	moz-border-radius: 5px;
+	border-radius: 5px;
+}
+.cont_css{
+	height: 200px;
+	width: 565px;
+	background-color: blue;
+	float: left;
+	-webkit-border-radius: 5px;
+	moz-border-radius: 5px;
+	border-radius: 5px;
+}
+.cont_js{
+	margin-right: 10px;
+	height: 200px;
+	width: 565px;
+	background-color: green;
+	float: left;
+	-webkit-border-radius: 5px;
+	moz-border-radius: 5px;
+	border-radius: 5px;
+}
+.cont_banco{
+	height: 200px;
+	width: 565px;
+	background-color: red;
+	float: left;
+	-webkit-border-radius: 5px;
+	moz-border-radius: 5px;
+	border-radius: 5px;
+}
