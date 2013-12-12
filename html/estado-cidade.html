@@ -1,0 +1,59 @@
+<div class="container margin">
+	<div class="jumbotron">
+		<h3>Estado - Cidade</h3>
+		<p>Ao selecionar o estado as cidades são carregadas por ajax.</p>
+	</div>
+	<div class="jumbotron">
+		<p>
+			<table border="0">
+				<tr>
+					<td>
+						Estado:
+					</td>
+					<td>
+						<%ESTADOS%>
+					</td>
+				</tr>
+				<tr id="linha_cidades" style="display: none;"> 	
+					<td>
+						Cidade:
+					</td>
+					<td id="aguarde"><strong>Aguarde, carregando...</strong></td>
+					<td id="cidades"></td>	
+				</tr>
+			</table>
+		</p>
+	</div>
+	<div class="cont_php">
+		<div class="titulo_cont_php">Código PHP</div>
+	</div>
+	<div class="cont_css">
+		<div class="titulo_cont_css">Código CSS</div>
+	</div>
+	<div class="cont_js">
+		<div class="titulo_cont_js">Código JS</div>
+	</div>
+	<div class="cont_html">
+		<div class="titulo_cont_html">Código HTML</div>
+	</div>
+</div>
+<script type="text/javascript">
+	function buscaCidade(){
+		$("#linha_cidades").show();
+		$("#cidades").hide();
+		$("#aguarde").show();
+		var idestado = document.getElementById("cod_estados").value;
+		var url = "<%URLPADRAO%>lib/ajax/buscacidade.php";
+		
+		$.post(url,
+				{idestado : idestado},
+				function(cidades){
+					$("#aguarde").hide();
+					$("#cidades").show();
+					$("#cidades").html(cidades);
+					}
+			);
+		
+		
+	}
+</script>
